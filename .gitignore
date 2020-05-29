@@ -1,5 +1,6 @@
 .idea
 ###> symfony/framework-bundle ###
+/.env.test
 /.env.local
 /.env.local.php
 /.env.*.local
@@ -10,3 +11,9 @@
 ###< symfony/framework-bundle ###
 /public/uploads/
 !/public/uploads/photos/.gitkeep
+
+###> symfony/phpunit-bridge ###
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
