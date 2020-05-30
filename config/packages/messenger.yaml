@@ -11,9 +11,9 @@ framework:
             async:
                 dsn: '%env(RABBITMQ_DSN)%'
                 retry_strategy:
-                max_retries: 3
-                multiplier: 2
-                failed: 'doctrine://default?queue_name=failed'
+                    max_retries: 3
+                    multiplier: 2
+            failed: 'doctrine://default?queue_name=failed'
         failure_transport: failed
 
         routing:
